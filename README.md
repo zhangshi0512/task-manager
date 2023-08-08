@@ -1,16 +1,20 @@
-# taskmanager-javafx-team-4
+# Task Manager, JavaFX Desktop Application
 
-Team 4 members:
+Programming Languages and Tech Stacks: Java, JavaFX, Maven
 
-- Jiayang Liu
-- Nuo Xu
-- Shi Zhang
+Author: Shi Zhang
 
 # Project Description
 
-This JavaFX Project is a continuation from the gradle version of task manager by team 4.
+Recognized the need for an organized and efficient desktop application that allows users to manage, filter, and sort tasks effectively.
 
-It allows user to load tasks from a csv file, apply filters to narrow down result display, or sort by certain criteria.
+Shi Zhang independently designed and developed a JavaFX application that provides users with intuitive functionalities for task management and categorization.
+
+- Designed a user interface using JavaFX, offering components like task input, filter/sort controls, and a dynamic task table display.
+- Implemented core task management functionalities in the TaskManager class, including task loading and saving.
+- Utilized Java's Stream API in combination with the TaskManager class to implement comprehensive filter/sort capabilities, allowing users to view tasks based on attributes like completion status, due date, and priority.
+- Incorporated file handling functionalities, enabling users to seamlessly import and export task data using CSV files.
+- Adhered to object-oriented design principles, ensuring the application's modularity, maintainability, and scalability.
 
 ## Task Manager Application - User Guide
 
@@ -158,4 +162,5 @@ TaskHelper ..> Priority
 
 # Task Manger Application Demo
 
-![Alt text](taskmanager-gui.gif)
+![taskmanager gui](https://github.com/zhangshi0512/task-manager/assets/100053535/0da8a2f4-76e0-4dc6-ab52-f7b53082661a)
+
