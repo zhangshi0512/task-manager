@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+
+<VBox fx:controller="taskmanager.team.MainController" spacing="10" fillWidth="true" alignment="center" xmlns:fx="http://javafx.com/fxml">
+    <padding>
+        <Insets top="5" right="5" bottom="5" left="5" />
+    </padding>
+    <HBox spacing="10" alignment="center">
+        <Label text="File Path"/>
+        <TextField fx:id="filePathField" HBox.hgrow="ALWAYS"/>
+        <Button text="Choose" fx:id="chooseButton" onAction="#chooseFile"/>
+    </HBox>
+    <TableView fx:id="taskTable" VBox.vgrow="ALWAYS">
+        <columns>
+            <TableColumn text="ID"/>
+            <TableColumn text="Description"/>
+            <TableColumn text="Complete"/>
+            <TableColumn text="Due"/>
+            <TableColumn text="Priority"/>
+            <TableColumn text="Category"/>
+        </columns>
+    </TableView>
+    <HBox>
+        <Label text="Filter/Sort By: " />
+        <ComboBox fx:id="filterSortComboBox" prefWidth="200.0" />
+        <Label text="Complete: " />
+        <ComboBox fx:id="completeFilterSortComboBox" prefWidth="100.0" />
+        <Label text="Due Date: " />
+        <DatePicker fx:id="dueDateFilterSortPicker" prefWidth="200.0" />
+        <Button fx:id="clearDueDateButton" text="Clear Due Date" />
+        <Label text="Priority: " />
+        <ComboBox fx:id="priorityFilterSortComboBox" prefWidth="100.0" />
+        <Button text="Filter/Sort" fx:id="filterSortButton" />
+    </HBox>
+    <HBox spacing="10" alignment="center">
+        <Label text="New Task Description: " />
+        <TextField fx:id="newTaskField"/>
+        <Label text="Complete: " />
+        <ComboBox fx:id="completeComboBox"/>
+        <Label text="Due Date: " />
+        <DatePicker fx:id="dueDatePicker"/>
+        <Label text="Priority: " />
+        <ComboBox fx:id="priorityComboBox"/>
+        <Label text="Category: " />
+        <TextField fx:id="categoryField"/>
+        <Button text="Add New" fx:id="addButton"/>
+    </HBox>
+</VBox>
